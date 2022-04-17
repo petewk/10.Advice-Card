@@ -1,0 +1,97 @@
+:root {
+  --Gray-Blue: hsl(217, 19%, 38%);
+  --Dark-Gray-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+}
+
+body {
+  background-color: var(--Dark-Blue);
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  #card {
+    width: 90vw
+  }
+
+  #dividerimg {
+    content: url('./images/pattern-divider-mobile.svg')
+  }
+
+
+    .divider {
+      bottom: 50px !important;
+    }
+
+    #adviceText {
+      padding-top: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+  #card {
+    width: 40vw;
+  }
+
+  #dividerimg {
+    content: url('./images/pattern-divider-desktop.svg')
+  }
+
+}
+
+#card {
+  background-color: var(--Dark-Gray-Blue);
+  margin: 30vh auto;
+  text-align: center;
+  height: 40vh;
+  border-radius: 10px;
+  position: relative;
+}
+
+#adviceNum {
+  color: var(--Neon-Green);
+  padding-top: 30px;
+}
+
+#adviceText {
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  padding-top: 15px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 80px;
+}
+
+#roll {
+  background-color: var(--Neon-Green);
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s;
+}
+
+.buttonCont {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: -34px;
+}
+
+#roll:hover {
+  box-shadow: 0px 0px 25px 3px var(--Neon-Green);
+  transition: 0.3s
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0px;
+}
